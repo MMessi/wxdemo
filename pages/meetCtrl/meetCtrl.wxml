@@ -1,0 +1,41 @@
+<view class="container">
+  <view>
+   <scroll-view class='epList' scroll-y="true">
+        <view class='addr-container' wx:for-items="{{epList}}" wx:for-index="id" wx:key="id"  data-id="{{item.id}}">
+          <checkbox checked='{{item.isChecked}}'></checkbox>
+          <view class='addr-image' wx:if="{{item.type == 0 && item.online == 0}}">
+            <image src='/images/kedacom/addrbook_offonline.png' class='addr-icon'></image>
+          </view>
+          <view class='addr-image' wx:elif="{{item.type == 0 && item.online == 1}}">
+            <image src='/images/kedacom/addrbook_online.png' class='addr-icon'></image>
+          </view>
+          <view class='addr-image' wx:elif="{{item.type == 1 && item.online == 0}}">
+            <image src='/images/kedacom/camera_offonline.png' class='addr-icon'></image>
+          </view>
+          <view class='addr-image' wx:elif="{{item.type == 1 && item.online == 1}}">
+            <image src='/images/kedacom/camera_online.png' class='addr-icon'></image>
+          </view>
+          <view class='addr-image' wx:elif="{{item.type == 2 && item.online == 0}}">
+            <image src='/images/kedacom/monitor_offonline.png' class='addr-icon'></image>
+          </view>
+          <view class='addr-image' wx:elif="{{item.type == 2 && item.online == 1}}">
+            <image src='/images/kedacom/monitor_online.png' class='addr-icon'></image>
+          </view>
+          <view>{{item.name}}</view>
+        </view>
+    </scroll-view>
+  </view>
+   
+
+     <view class="meetCtrl-container">
+        <scroll-view class="type-navbar" scroll-x="true">
+            <view class="type-box" wx:for-items="{{meetCtrlIcon}}" wx:key="index" >
+                <view id="{{item.index}}" class="type-navbar-item {{activeMeetCtrlId == item.index ? 'type-item-on' : ''}}" bindtap='tabClick'>
+                    <image src='{{item.picUrl}}' class='type-navbar-item-icon'></image>
+                    <view class='meetCtrl-name'>{{item.name}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+

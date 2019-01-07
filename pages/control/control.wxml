@@ -1,0 +1,10 @@
+<import src="../../template/meetTemplate.wxml" />
+<view class="container">
+  <scroll-view scroll-y="true" wx:if="{{!isEmpty}}">
+    <template is="meetTemplate" data="{{meetList}}"/>
+  </scroll-view>
+  <view class='empty-content' wx:else>
+     <image src='/images/kedacom/empty.png' class='empty-icon'></image>
+     <text>当前会议列表为空</text>
+  </view>
+</view>

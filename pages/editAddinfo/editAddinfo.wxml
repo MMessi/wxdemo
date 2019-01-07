@@ -1,0 +1,21 @@
+<!--pages/editAddinfo/editAddinfo.wxml-->
+<view class='container'>
+  <view class='terinfo'>
+    <view class='terinfo-item terinfo-name'>
+      <text>名称： </text>
+      <input type='text' placeholder="请输入名称" value='H9001'></input>
+    </view>
+    <view class='terinfo-item terinfo-e164'>
+      <text>号码： </text>
+      <input type='text'  placeholder="请输入e164" value='12727272727'></input>
+    </view>
+    <view class='terinfo-item terinfo-ip'>
+       <text>IP： </text>
+       <input type='text'  placeholder="请输入IP" value='127.0.0.1'></input>
+    </view>
+  </view>
+  <view class='terinfo-btn'>
+     <button class='btn-save' bindtap='addSave'>保存</button>
+     <button class='btn-cancel' bindtap='addCancel'>取消</button>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/meetCtrl/meetCtrl",
+    "pages/control/control",
+    "pages/editAddinfo/editAddinfo",
+    "pages/userinfo/userinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "keda会议控制平台",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/control/control",
+        "iconPath": "images/nav/cart-off.png",
+        "selectedIconPath": "images/nav/cart-on.png",
+        "text": "会议控制"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "地址簿"
+      },
+      {
+        "pagePath": "pages/userinfo/userinfo",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png",
+        "text": "用户管理"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx503b6d6e009ad7bb"
+  ]
+}

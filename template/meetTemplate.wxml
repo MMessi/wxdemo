@@ -1,0 +1,18 @@
+
+<template name="meetTemplate">
+  <view wx:for="{{meetList}}" wx:key="meetId" class='meetItem' data-id='{{item.meetId}}'>
+     <view class='meetHeader'>
+          <image class='meetIcon' src='/images/kedacom/icon_conf.jpg'></image> 
+          <text >{{item.meetName}}</text>
+     </view>
+      <view class='meetInfo'>
+          <text >开始: {{item.time}}</text>
+          <text >主会场： {{item.epList[0].epName}}</text>
+          <text >会议成员 ： 22</text>
+      </view>
+      <view class='meetCtrl'>
+          <button catchtap='meetCtrl' data-id='{{item.meetId}}'>会议控制</button>
+          <button catchtap='meetEnd' data-id='{{item.meetId}}'>结束会议</button>
+      </view>
+  </view>
+</template>

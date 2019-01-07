@@ -1,0 +1,27 @@
+.container{
+  height: 100%;
+  display: block;
+  background-color: #F2f2f2;
+  font-size: 35rpx;
+}
+.terinfo-item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 50rpx 0rpx;
+}
+.terinfo-item text{
+  line-height: 50rpx;
+  width:150rpx;
+  
+}
+.terinfo-item input{
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+}
+.terinfo-btn{
+  padding: 100rpx 0rpx;
+}
+.terinfo-btn button{
+  margin-top: 25rpx;
+}

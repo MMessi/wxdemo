@@ -1,0 +1,38 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+  <view class='search-container'>
+    <view class='search-content'>
+        <image src='/images/kedacom/search-icon.png' class='search-icon'></image>
+        <input placeholder="请输入名字/IP/e164号" auto-focus />
+    </view>
+    <view class='search-control'>
+        <text class='search-btn'>搜索</text>
+    </view>
+  </view>
+  <scroll-view scroll-y="true">
+      <view class='addr-container' wx:for-items="{{addrlist}}" wx:for-index="id" wx:key="id"  bindtap="getAddrInfo" data-id="{{item.id}}">
+      <checkbox checked='{{item.isChecked}}'></checkbox>
+      <view class='addr-image' wx:if="{{item.type == 0 && item.online == 0}}">
+         <image src='/images/kedacom/addrbook_offonline.png' class='addr-icon'></image>
+      </view>
+      <view class='addr-image' wx:elif="{{item.type == 0 && item.online == 1}}">
+         <image src='/images/kedacom/addrbook_online.png' class='addr-icon'></image>
+      </view>
+      <view class='addr-image' wx:elif="{{item.type == 1 && item.online == 0}}">
+         <image src='/images/kedacom/camera_offonline.png' class='addr-icon'></image>
+      </view>
+      <view class='addr-image' wx:elif="{{item.type == 1 && item.online == 1}}">
+         <image src='/images/kedacom/camera_online.png' class='addr-icon'></image>
+      </view>
+       <view class='addr-image' wx:elif="{{item.type == 2 && item.online == 0}}">
+         <image src='/images/kedacom/monitor_offonline.png' class='addr-icon'></image>
+      </view>
+      <view class='addr-image' wx:elif="{{item.type == 2 && item.online == 1}}">
+         <image src='/images/kedacom/monitor_online.png' class='addr-icon'></image>
+      </view>
+      <view class=''>{{item.name}}</view>
+      <view data-id="{{item.id}}" class='addr-edit' catchtap='addrEdit'>编辑</view>
+  </view>
+  </scroll-view>
+ 
+</view>

@@ -1,0 +1,59 @@
+.container{
+  width:100%;
+  min-height:100%;
+  background-color: #F2f2f2;
+  padding: 0;
+  display: block
+}
+.epList{
+  height: 1000rpx;
+}
+.addr-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30rpx;
+}
+.addr-container checkbox{
+  margin-left: 10rpx;
+}
+.addr-image{
+  margin: 10rpx 20rpx;
+}
+.addr-icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.addr-edit{
+  margin-left: 80rpx;
+  text-decoration: underline;
+  color: #1E94DA
+}
+.meetCtrl-container{
+  width: 100%;
+  height: 200rpx;
+  overflow: hidden;
+  border-top:5px solid #ffffff 
+}
+.type-navbar{
+  width: 100%;
+  height: 200rpx;
+  display:inline-block;
+  font-size: 30rpx;
+  white-space:nowrap;
+}
+.type-box{
+  width: 120rpx;
+  height: 150rpx;
+  display: inline-block;
+}
+.type-navbar-item-icon{
+  width: 120rpx;
+  height: 120rpx;
+}
+.meetCtrl-name{
+  text-align: center;
+  line-height: 30rpx;
+}

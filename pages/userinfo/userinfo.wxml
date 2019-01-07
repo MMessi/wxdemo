@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="userinfo">
+      <image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+    </view>
+    <view style="height:20rpx;background: #eee;width:100%;"></view>
+    <view class='userinfo-item'>
+       当前版本v4.1.2.1
+    </view>
+    <view class='userinfo-item'>
+       手机号码：12345678
+    </view>
+     <view class='userinfo-item'>
+        邮箱：messi@kedacom.com
+    </view>
+    <view class='userinfo-item'>
+        地址：苏州科达股份有限公司
+    </view>
+    <view class='userinfo-item'>
+        终端信息
+    </view>
+</view>
+
+  
+
